@@ -9,7 +9,7 @@ layout: home
       <h3>6PM Ashland Arrives</h3>
     </div>
     <div>
-      <h3>9PM Fairbanks Arrives (AS 106)</h3>
+      <h3>9PM Fairbanks Arrives <a href="https://www.flightaware.com/live/flight/ASA106">AS 106</a></h3>
     </div>
   </div>
 </section>
@@ -18,16 +18,18 @@ layout: home
   <h2>Wednesday, Oct 1</h2>
   <div class="timeline">
     <div>
-      <h3>3PM Yesler Rendezvous</h3>
-    </div>
-    <div>
-      <h3>4PM Courthouse</h3>
+      <h3>1:30PM Seattle Ferry Terminal</h3>
+      {% include address.html street="801 Alaskan Way" city="Seattle, WA" zip="98104" %}
+      <div>
+        <a href="https://wsdot.com/ferries/schedule/scheduledetailbyroute.aspx?route=sea-br">Ferry Schedule</a>
+      </div>
     </div>
     <div>
       <h3>4PM Check In to Bremerton House</h3>
+      {% include address.html street="4940 Chico Way Northwest" city="Bremerton, WA" zip="98312" %}
     </div>
     <div>
-      <h3>10:30PM Miami Arrives (AS 517)</h3>
+      <h3>10:30PM Miami Arrives <a href="https://www.flightaware.com/live/flight/ASA517">AS 517</a></h3>
     </div>
   </div>
 </section>
@@ -35,18 +37,26 @@ layout: home
 <section class="day" id="thursday-oct-2">
   <h2>Thursday, Oct 2</h2>
   <div class="timeline">
-    <div>11AM Houston Arrives (AS 399)</div>
+    <div>11AM Houston Arrives <a href="https://www.flightaware.com/live/flight/ASA399">AS 399</a></div>
+    <div>
+      <h3>1:30PM Bremerton Ferry Terminal (Alaskans only)</h3>
+      {% include address.html street="211 1st St" city="Bremerton, WA" zip="98337" %}
+    </div>
     <div>
       <h3>3PM Yesler Rendezvous</h3>
+      {% include address.html street="2613 E Yesler Way" city="Seattle, WA" zip="98122" %}
     </div>
     <div>
       <h3>4PM Courthouse</h3>
+      {% include address.html street="600 5th Ave" city="Seattle, WA" zip="98104" %}
     </div>
     <div>
-      <h3>6:45PM Dinner</h3>
+      <h3>6:45PM Dinner at Staple &amp; Fancy</h3>
+      {% include address.html street="4739 Ballard Ave NW" city="Seattle, WA" zip="98107" %}
     </div>
     <div>
-      <h3>10:30 Seattle Ferry Terminal</h3>
+      <h3>10:30PM Seattle Ferry Terminal</h3>
+      {% include address.html street="801 Alaskan Way" city="Seattle, WA" zip="98104" %}
     </div>
   </div>
 </section>

@@ -17,7 +17,8 @@ h1 {
 }
 
 h2 {
-  font-family: "JosephSophia", serif;
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
   font-size: 2rem !important;
 }
 
@@ -112,4 +113,12 @@ h2 {
 
 .day {
   margin: 20px 0;
+}
+
+.timeline > div {
+  margin: 10px 0;
+}
+
+.address {
+  font-size: 0.7rem;
 }
