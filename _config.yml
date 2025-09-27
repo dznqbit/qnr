@@ -26,3 +26,10 @@ plugins:
   #- jekyll-seo-tag
   #- jemoji
   - jekyll-remote-theme
+
+cdn:
+  jsdelivr:
+    enabled: true
+
+minima:
+  skin: auto
