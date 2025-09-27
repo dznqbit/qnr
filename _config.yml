@@ -1,0 +1,28 @@
+# Site settings
+title: Quinton & Rhina
+baseurl: ""
+url: ""
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+
+remote_theme: jekyll/minima
+
+plugins:
+  #- jekyll-sitemap
+  #- jekyll-seo-tag
+  #- jemoji
+  - jekyll-remote-theme
