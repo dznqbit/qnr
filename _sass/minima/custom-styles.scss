@@ -7,9 +7,18 @@
   font-display: swap;
 }
 
+.page-content {
+  padding: 0;
+}
+
 h1 {
   font-family: "JosephSophia", serif;
   font-size: 4rem !important;
+}
+
+h2 {
+  font-family: "JosephSophia", serif;
+  font-size: 2rem !important;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -99,4 +108,8 @@ h1 {
   th {
     background-color: #404040;
   }
+}
+
+.day {
+  margin: 20px 0;
 }
