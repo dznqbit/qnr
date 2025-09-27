@@ -1,13 +1,11 @@
+{%- capture address_query -%}{{ include.street | replace: ' ', '+' }},{{ include.city | replace: ' ', '+' }}+{{ include.zip }}{%- endcapture -%}
 <div class="address">
-  <span>
-    {{ include.street }}
-  </span>
-  
-  <span>
-    {{ include.city }}
-  </span>
-
-  <span>
-    {{ include.zip }}
-  </span>
+  <a href="https://maps.google.com/maps?q={{ address_query }}"
+     target="_blank"
+     class="address-link"
+     onclick="if(/iPhone|iPad|iPod|Macintosh/.test(navigator.userAgent)) { this.href='maps://maps.apple.com/?q={{ address_query }}'; }">
+    <span>{{ include.street }}</span>
+    <span>{{ include.city }}</span>
+    <span>{{ include.zip }}</span>
+  </a>
 </div>

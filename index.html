@@ -9,7 +9,7 @@ layout: home
       <h3>6PM Ashland Arrives</h3>
     </div>
     <div>
-      <h3>9PM Fairbanks Arrives <a href="https://www.flightaware.com/live/flight/ASA106">AS 106</a></h3>
+      <h3>9AM {% include flight-link.html title="Fairbanks Arrives" flight="AS 106" href="https://www.flightaware.com/live/flight/ASA106" %}</h3>
     </div>
   </div>
 </section>
@@ -29,7 +29,7 @@ layout: home
       {% include address.html street="4940 Chico Way Northwest" city="Bremerton, WA" zip="98312" %}
     </div>
     <div>
-      <h3>10:30PM Miami Arrives <a href="https://www.flightaware.com/live/flight/ASA517">AS 517</a></h3>
+      <h3>10:30PM {% include flight-link.html title="Miami Arrives" flight="AS 517" href="https://www.flightaware.com/live/flight/ASA517" %}</h3>
     </div>
   </div>
 </section>
@@ -37,7 +37,9 @@ layout: home
 <section class="day" id="thursday-oct-2">
   <h2>Thursday, Oct 2</h2>
   <div class="timeline">
-    <div>11AM Houston Arrives <a href="https://www.flightaware.com/live/flight/ASA399">AS 399</a></div>
+    <div>
+      <h3>11AM {% include flight-link.html title="Houston Arrives" flight="AS 399" href="https://www.flightaware.com/live/flight/ASA399" %}</h3>
+    </div>
     <div>
       <h3>1:30PM Bremerton Ferry Terminal (Alaskans only)</h3>
       {% include address.html street="211 1st St" city="Bremerton, WA" zip="98337" %}
@@ -68,6 +70,9 @@ layout: home
       <h3>8AM - 12PM Breakfast</h3>
     </div>
     <div>
+      <h3>12PM - 4:30PM Choose Your Own Adventure</h3>
+    </div>
+    <div>
       <h3>5:30PM Knot Tying Event</h3>
     </div>
     <div>
@@ -83,10 +88,12 @@ layout: home
       <h3>9AM Check Out of Bremerton House</h3>
     </div>
     <div>
-      <h3>5:30PM Knot Tying Event</h3>
+      <h3>Bremerton Ferry Terminal</h3>
+      {% include address.html street="211 1st St" city="Bremerton, WA" zip="98337" %}
     </div>
     <div>
       <h3>4PM Check In to Ballard House</h3>
+      {% include address.html street="5506 5th Ave NW" city="Seattle, WA" zip="98107" %}
     </div>
   </div>
 </section>
@@ -95,16 +102,7 @@ layout: home
   <h2>Sunday, Oct 5</h2>
   <div class="timeline">
     <div>
-      <h3>8AM Miami Departs (AS 517)</h3>
-    </div>
-    <div>
-      <h3>5:30PM Knot Tying Event</h3>
-    </div>
-    <div>
-      <h3>4PM Check In to Ballard House</h3>
-    </div>
-    <div>
-      <h3>Evening Check In to Ballard House</h3>
+      <h3>8AM {% include flight-link.html title="Miami Departs" flight="AS 517" href="https://www.flightaware.com/live/flight/ASA517" %}</h3>
     </div>
   </div>
 </section>
@@ -116,10 +114,10 @@ layout: home
       <h3>9AM Check Out of Ballard House</h3>
     </div>
     <div>
-      <h3>4PM Houston Departs (UA 1928)</h3>
+      <h3>4PM {% include flight-link.html title="Houston Departs" flight="UA 1928" href="https://www.flightaware.com/live/flight/UAL1928" %}</h3></h3>
     </div>
     <div>
-      <h3>6PM Fairbanks Departs (AS 167)</h3>
+      <h3>6PM {% include flight-link.html title="Fairbanks Departs" flight="AS 167" href="https://www.flightaware.com/live/flight/ASA167" %}</h3>
     </div>
   </div>
 </section>
