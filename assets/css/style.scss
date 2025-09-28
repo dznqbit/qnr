@@ -4,3 +4,22 @@
 @import
   "minima/skins/{{ site.minima.skin | default: 'classic' }}",
   "minima/initialize";
+
+@font-face {
+  font-family: 'JosephSophia';
+  src: url('/assets/fonts/josephsophia.ttf') format('truetype'),
+       url('/assets/fonts/josephsophia.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+h1 {
+  font-family: 'JosephSophia', serif !important;
+}
+
+@media (max-width: 768px) {
+  .flex {
+    flex-direction: column !important;
+  }
+}
