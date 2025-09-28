@@ -4,8 +4,8 @@
      target="_blank"
      class="address-link"
      onclick="if(/iPhone|iPad|iPod|Macintosh/.test(navigator.userAgent)) { this.href='maps://maps.apple.com/?q={{ address_query }}'; }">
-    <span>{{ include.street }}</span>
-    <span>{{ include.city }}</span>
-    <span>{{ include.zip }}</span>
+    <p>{{ include.street }}</p>
+    <p>{{ include.city }}</p>
+    <p>{{ include.zip }}</p>
   </a>
 </div>

@@ -11,6 +11,10 @@
   padding: 0;
 }
 
+a {
+  font-weight: bold;
+}
+
 h1 {
   font-family: "JosephSophia", serif;
   font-size: 4rem !important;
@@ -26,6 +30,9 @@ h2 {
   body {
     background-color: #1a1a1a;
     color: #e0e0e0;
+  }
+  blockquote {
+    background: transparent;
   }
 
   .site-header {
@@ -90,9 +97,7 @@ h2 {
   }
 
   blockquote {
-    background-color: #2d2d2d;
     border-left: 4px solid #666666;
-    color: #cccccc;
   }
 
   table {
@@ -112,13 +117,19 @@ h2 {
 }
 
 .day {
-  margin: 20px 0;
+  margin: 40px 0;
 }
 
 .timeline > div {
-  margin: 10px 0;
+  margin: 20px 0;
 }
 
 .address {
-  font-size: 0.7rem;
+  flex-basis: 16rem;
+  flex-shrink: 0;
+  padding: 0 20px;
+}
+
+a.address-link {
+  font-weight: normal;
 }
