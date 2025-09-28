@@ -145,3 +145,15 @@ h2 {
 a.address-link {
   font-weight: normal;
 }
+
+@media (max-width: 768px) {
+  .flex {
+    flex-direction: column !important;
+  }
+
+  .address {
+    flex-basis: 2rem;
+    flex-shrink: 1;
+    padding: 0 0 20px 0;
+  }
+}
