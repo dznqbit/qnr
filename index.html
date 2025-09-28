@@ -5,12 +5,18 @@ layout: home
 <section class="day" id="tuesday-sep-30">
   <h2>Tuesday, Sept 30</h2>
   <div class="timeline">
-    <div>
-      <h3>6PM Ashland Arrives</h3>
+    <div class="event">
+      <p class="event-time">6PM</p>
+      <div class="event-details">
+        <h3>Ashland Arrives</h3>
+      </div>
     </div>
-    <div>
-      <h3>9:30PM {% include flight-link.html title="Fairbanks Arrives" flight="AS 106"
-        href="https://www.flightaware.com/live/flight/ASA106" %}</h3>
+    <div class="event">
+      <p class="event-time">9:30PM</p>
+      <div class="event-details">
+        <h3>{% include flight-link.html title="Fairbanks Arrives" flight="AS 106"
+          href="https://www.flightaware.com/live/flight/ASA106" %}</h3>
+      </div>
     </div>
   </div>
 </section>
@@ -18,31 +24,42 @@ layout: home
 <section class="day" id="wednesday-oct-1">
   <h2>Wednesday, Oct 1</h2>
   <div class="timeline">
-    <div>
-      <h3>1:30PM Seattle Ferry Terminal</h3>
-      <div class="flex">
-        {% include address.html street="801 Alaskan Way" city="Seattle, WA" zip="98104" %}
-        <div>
-          <a href="https://wsdot.com/ferries/schedule/scheduledetailbyroute.aspx?route=sea-br">Ferry Schedule</a>
+    <div class="event">
+      <p class="event-time">1:30PM</p>
+      <div class="event-details">
+        <h3>Seattle Ferry Terminal</h3>
+        <div class="flex">
+          {% include address.html street="801 Alaskan Way" city="Seattle, WA" zip="98104" %}
+          <div>
+            <a href="https://wsdot.com/ferries/schedule/scheduledetailbyroute.aspx?route=sea-br">Ferry Schedule</a>
+          </div>
         </div>
       </div>
     </div>
-    <div>
-      <h3>4PM Check In to Bremerton House</h3>
-      <div class="flex">
-        {% include address.html street="4940 Chico Way Northwest" city="Bremerton, WA" zip="98312" %}
-        <div class="notes">
-          <p>From the host</p>
-          <blockquote>
-            Set your favorite navigation app to use 4964 as the house number and turn down the private driveway at that
-            location. Proceed until the end of this road. The house is a few hundred feet (~150 meters) from the street.
-          </blockquote>
+    <div class="event">
+      <p class="event-time">4PM</p>
+      <div class="event-details">
+        <h3>Check In to Bremerton House</h3>
+        <div class="flex">
+          {% include address.html street="4940 Chico Way Northwest" city="Bremerton, WA" zip="98312" %}
+          <div class="notes">
+            <p>From the host</p>
+            <blockquote>
+              Set your favorite navigation app to use 4964 as the house number and turn down the private driveway at
+              that
+              location. Proceed until the end of this road. The house is a few hundred feet (~150 meters) from the
+              street.
+            </blockquote>
+          </div>
         </div>
       </div>
     </div>
-    <div>
-      <h3>10:30PM {% include flight-link.html title="Miami Arrives" flight="AS 517"
-        href="https://www.flightaware.com/live/flight/ASA517" %}</h3>
+    <div class="event">
+      <p class="event-time">10:30PM</p>
+      <div class="event-details">
+        <h3>{% include flight-link.html title="Miami Arrives" flight="AS 517"
+          href="https://www.flightaware.com/live/flight/ASA517" %}</h3>
+      </div>
     </div>
   </div>
 </section>
@@ -50,43 +67,61 @@ layout: home
 <section class="day" id="thursday-oct-2">
   <h2>Thursday, Oct 2</h2>
   <div class="timeline">
-    <div>
-      <h3>11AM {% include flight-link.html title="Houston Arrives" flight="AS 399"
-        href="https://www.flightaware.com/live/flight/ASA399" %}</h3>
+    <div class="event">
+      <p class="event-time">11AM</p>
+      <div class="event-details">
+        <h3>{% include flight-link.html title="Houston Arrives" flight="AS 399"
+          href="https://www.flightaware.com/live/flight/ASA399" %}</h3>
+      </div>
     </div>
-    <div>
-      <h3>1:30PM Bremerton Ferry Terminal (Alaskans only)</h3>
-      <div class="flex">
-        {% include address.html street="211 1st St" city="Bremerton, WA" zip="98337" %}
-        <div>
-          <a href="https://wsdot.com/ferries/schedule/scheduledetailbyroute.aspx?route=sea-br">Ferry Schedule</a>
+    <div class="event">
+      <p class="event-time">1:30PM</p>
+      <div class="event-details">
+        <h3>Bremerton Ferry Terminal (Alaskans only)</h3>
+        <div class="flex">
+          {% include address.html street="211 1st St" city="Bremerton, WA" zip="98337" %}
+          <div>
+            <a href="https://wsdot.com/ferries/schedule/scheduledetailbyroute.aspx?route=sea-br">Ferry Schedule</a>
+          </div>
         </div>
       </div>
     </div>
-    <div>
-      <h3>3PM Yesler Rendezvous</h3>
-      <div class="flex">
-        {% include address.html street="2613 E Yesler Way" city="Seattle, WA" zip="98122" %}
+    <div class="event">
+      <p class="event-time">3PM</p>
+      <div class="event-details">
+        <h3>⭐️ Yesler Rendezvous</h3>
+        <div class="flex">
+          {% include address.html street="2613 E Yesler Way" city="Seattle, WA" zip="98122" %}
+        </div>
       </div>
     </div>
-    <div>
-      <h3>4PM Courthouse</h3>
-      <div class="flex">
-        {% include address.html street="600 5th Ave" city="Seattle, WA" zip="98104" %}
+    <div class="event">
+      <p class="event-time">4PM</p>
+      <div class="event-details">
+        <h3>Courthouse</h3>
+        <div class="flex">
+          {% include address.html street="600 5th Ave" city="Seattle, WA" zip="98104" %}
+        </div>
       </div>
     </div>
-    <div>
-      <h3>6:45PM Dinner at Staple &amp; Fancy</h3>
-      <div class="flex">
-        {% include address.html street="4739 Ballard Ave NW" city="Seattle, WA" zip="98107" %}
+    <div class="event">
+      <p class="event-time">6:45PM</p>
+      <div class="event-details">
+        <h3>⭐️ Dinner at Staple &amp; Fancy</h3>
+        <div class="flex">
+          {% include address.html street="4739 Ballard Ave NW" city="Seattle, WA" zip="98107" %}
+        </div>
       </div>
     </div>
-    <div>
-      <h3>10:30PM Seattle Ferry Terminal</h3>
-      <div class="flex">
-        {% include address.html street="801 Alaskan Way" city="Seattle, WA" zip="98104" %}
-        <div>
-          <a href="https://wsdot.com/ferries/schedule/scheduledetailbyroute.aspx?route=sea-br">Ferry Schedule</a>
+    <div class="event">
+      <p class="event-time">10:30PM</p>
+      <div class="event-details">
+        <h3>Seattle Ferry Terminal</h3>
+        <div class="flex">
+          {% include address.html street="801 Alaskan Way" city="Seattle, WA" zip="98104" %}
+          <div>
+            <a href="https://wsdot.com/ferries/schedule/scheduledetailbyroute.aspx?route=sea-br">Ferry Schedule</a>
+          </div>
         </div>
       </div>
     </div>
@@ -96,53 +131,77 @@ layout: home
 <section class="day" id="friday-oct-3">
   <h2>Friday, Oct 3</h2>
   <div class="timeline">
-    <div>
-      <h3>8AM - 12PM Breakfast</h3>
+    <div class="event">
+      <p class="event-time">8AM</p>
+      <div class="event-details">
+        <h3>Breakfast</h3>
+      </div>
     </div>
-    <div>
-      <h3>12PM - 4:30PM Choose Your Own Adventure</h3>
-      <div class="my-5">
-        <h4 class="pl-5">Bloedel Reserve</h4>
-        <div class="flex">
-          {% include address.html street="7571 NE Dolphin Dr" city="Bainbridge Island, WA" zip="98110" %}
-          <div>
-            <p>140 acre garden, no dogs</p>
-            <a href="https://bloedelreserve.org/tickets/" title="Bloedel Reserve Tickets">Tickets</a>
+    <div class="event">
+      <p class="event-time">12PM</p>
+      <div class="event-details">
+        <h3>Choose Your Own Adventure</h3>
+        <div class="my-5">
+          <h4 class="pl-5">Bloedel Reserve</h4>
+          <div class="flex">
+            {% include address.html street="7571 NE Dolphin Dr" city="Bainbridge Island, WA" zip="98110" %}
+            <div>
+              <p>140 acre garden, no dogs</p>
+              <a href="https://bloedelreserve.org/tickets/" title="Bloedel Reserve Tickets">Tickets</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="my-5">
+          <h4 class="pl-5">Poulsbo</h4>
+          <div class="flex">
+            {% include address.html street="18801 Front St NE" city="Poulsbo, WA" zip="98370" %}
+            <div>
+              <p>Ice cream!</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="my-5">
+          <h4 class="pl-5"><a href="https://navalunderseamuseum.org" title="Undersea Museum">Naval Undersea Museum</a>
+          </h4>
+          <div class="flex">
+            {% include address.html street="1 Garnett Way" city="Keyport, WA" zip="98345" %}
+            <div>
+              <p>
+              <p>The U.S. Naval Undersea Museum holds more than 54,000 artifacts in our collection, which includes items
+                of
+                historic, technological, operational, cultural, and personal significance related to the U.S. Navy's
+                undersea communities.</p>
+              </p>
+            </div>
           </div>
         </div>
       </div>
-
-      <div class="my-5">
-        <h4 class="pl-5">Poulsbo</h4>
+    </div>
+    <div class="event">
+      <p class="event-time">5:30PM</p>
+      <div class="event-details">
+        <h3>⭐️ Knot Tying Event</h3>
         <div class="flex">
-          {% include address.html street="18801 Front St NE" city="Poulsbo, WA" zip="98370" %}
-          <div>
-            <p>Ice cream!</p>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="my-5">
-        <h4 class="pl-5">Poulsbo</h4>
-        <div class="flex">
-          {% include address.html street="1 Garnett Way" city="Keyport, WA" zip="98345" %}
-          <div>
-            <p>
-              <a href="https://navalunderseamuseum.org" title="Undersea Museum">Naval Undersea Museum</a>
-              <p>The U.S. Naval Undersea Museum holds more than 54,000 artifacts in our collection, which includes items of
-              historic, technological, operational, cultural, and personal significance related to the U.S. Navy's
-              undersea communities.</p>
-            </p>
+          {% include address.html street="4940 Chico Way Northwest" city="Bremerton, WA" zip="98312" %}
+          <div class="notes">
+            <p>From the host</p>
+            <blockquote>
+              Set your favorite navigation app to use 4964 as the house number and turn down the private driveway at
+              that
+              location. Proceed until the end of this road. The house is a few hundred feet (~150 meters) from the
+              street.
+            </blockquote>
           </div>
         </div>
       </div>
     </div>
-    <div>
-      <h3>5:30PM Knot Tying Event</h3>
-    </div>
-    <div>
-      <h3>8PM Dinner</h3>
+    <div class="event">
+      <p class="event-time">8PM</p>
+      <div class="event-details">
+        <h3>Dinner</h3>
+      </div>
     </div>
   </div>
 </section>
@@ -150,22 +209,31 @@ layout: home
 <section class="day" id="saturday-oct-4">
   <h2>Saturday, Oct 4</h2>
   <div class="timeline">
-    <div>
-      <h3>9AM Check Out of Bremerton House</h3>
+    <div class="event">
+      <p class="event-time">9AM</p>
+      <div class="event-details">
+        <h3>Check Out of Bremerton House</h3>
+      </div>
     </div>
-    <div>
-      <h3>9:50AM Bremerton Ferry Terminal</h3>
-      <div class="flex">
-        {% include address.html street="211 1st St" city="Bremerton, WA" zip="98337" %}
-        <div>
-          <a href="https://wsdot.com/ferries/schedule/scheduledetailbyroute.aspx?route=sea-br">Ferry Schedule</a>
+    <div class="event">
+      <p class="event-time">9:50AM</p>
+      <div class="event-details">
+        <h3>Bremerton Ferry Terminal</h3>
+        <div class="flex">
+          {% include address.html street="211 1st St" city="Bremerton, WA" zip="98337" %}
+          <div>
+            <a href="https://wsdot.com/ferries/schedule/scheduledetailbyroute.aspx?route=sea-br">Ferry Schedule</a>
+          </div>
         </div>
       </div>
     </div>
-    <div>
-      <h3>4PM Check In to Ballard House</h3>
-      <div class="flex">
-        {% include address.html street="5506 5th Ave NW" city="Seattle, WA" zip="98107" %}
+    <div class="event">
+      <p class="event-time">4PM</p>
+      <div class="event-details">
+        <h3>Check In to Ballard House</h3>
+        <div class="flex">
+          {% include address.html street="5506 5th Ave NW" city="Seattle, WA" zip="98107" %}
+        </div>
       </div>
     </div>
   </div>
@@ -174,17 +242,26 @@ layout: home
 <section class="day" id="sunday-oct-5">
   <h2>Sunday, Oct 5</h2>
   <div class="timeline">
-    <div>
-      <h3>8AM {% include flight-link.html title="Miami Departs" flight="AS 517"
-        href="https://www.flightaware.com/live/flight/ASA517" %}</h3>
+    <div class="event">
+      <p class="event-time">8AM</p>
+      <div class="event-details">
+        <h3>{% include flight-link.html title="Miami Departs" flight="AS 517"
+          href="https://www.flightaware.com/live/flight/ASA517" %}</h3>
+      </div>
     </div>
-    <div>
-      <h3>10AM Ballard Farmer's Market</h3>
-      {% include address.html street="5300 Ballard Ave NW" city="Seattle, WA" zip="98107" %}
+    <div class="event">
+      <p class="event-time">10AM</p>
+      <div class="event-details">
+        <h3>Ballard Farmer's Market</h3>
+        {% include address.html street="5300 Ballard Ave NW" city="Seattle, WA" zip="98107" %}
+      </div>
     </div>
-    <div>
-      <h3>6PM Sunset Golden Gardens</h3>
-      {% include address.html street="8498 Seaview Pl NW" city="Seattle, WA" zip="98117" %}
+    <div class="event">
+      <p class="event-time">6PM</p>
+      <div class="event-details">
+        <h3>Sunset Golden Gardens</h3>
+        {% include address.html street="8498 Seaview Pl NW" city="Seattle, WA" zip="98117" %}
+      </div>
     </div>
   </div>
 </section>
@@ -192,17 +269,25 @@ layout: home
 <section class="day" id="monday-oct-6">
   <h2>Monday, Oct 6</h2>
   <div class="timeline">
-    <div>
-      <h3>9AM Check Out of Ballard House</h3>
+    <div class="event">
+      <p class="event-time">9AM</p>
+      <div class="event-details">
+        <h3>Check Out of Ballard House</h3>
+      </div>
     </div>
-    <div>
-      <h3>4PM {% include flight-link.html title="Houston Departs" flight="UA 1928"
-        href="https://www.flightaware.com/live/flight/UAL1928" %}</h3>
-      </h3>
+    <div class="event">
+      <p class="event-time">4PM</p>
+      <div class="event-details">
+        <h3>{% include flight-link.html title="Houston Departs" flight="UA 1928"
+          href="https://www.flightaware.com/live/flight/UAL1928" %}</h3>
+      </div>
     </div>
-    <div>
-      <h3>6PM {% include flight-link.html title="Fairbanks Departs" flight="AS 167"
-        href="https://www.flightaware.com/live/flight/ASA167" %}</h3>
+    <div class="event">
+      <p class="event-time">6PM</p>
+      <div class="event-details">
+        <h3>{% include flight-link.html title="Fairbanks Departs" flight="AS 167"
+          href="https://www.flightaware.com/live/flight/ASA167" %}</h3>
+      </div>
     </div>
   </div>
 </section>

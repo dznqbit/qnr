@@ -120,8 +120,20 @@ h2 {
   margin: 40px 0;
 }
 
-.timeline > div {
+.event {
   margin: 20px 0;
+  display: flex;
+}
+
+.event-time {
+  flex-basis: 5rem;
+  flex-shrink: 0;
+  padding-right: 1rem;
+  text-align: right;
+}
+
+.event-details {
+  flex-grow: 1;
 }
 
 .address {
