@@ -26,18 +26,38 @@ h2 {
   font-size: 2rem !important;
 }
 
+section:first-child {
+  margin-top: 0;
+}
+
+.site-header {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.site-header .wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.site-header img {
+  height: 20vh;
+  margin: 0 auto;
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #1a1a1a;
     color: #e0e0e0;
   }
+  
   blockquote {
     background: transparent;
-  }
-
-  .site-header {
-    background-color: #2d2d2d;
-    border-bottom: 1px solid #404040;
   }
 
   .site-title,
@@ -62,10 +82,6 @@ h2 {
   .contact-list,
   .social-media-list {
     color: #e0e0e0;
-  }
-
-  .wrapper {
-    background-color: #1a1a1a;
   }
 
   h1,
